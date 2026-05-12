@@ -68,15 +68,18 @@ body{
 
   border-radius:10px;
 
-  transition:0.3s;
+  transition: all 0.3s ease;
 
   font-weight:bold;
 }
 
 .btn:hover{
+
   background:#1d4ed8;
 
   transform:scale(1.03);
+
+  box-shadow:0 10px 20px rgba(37,99,235,0.3);
 }
 
 .card,
@@ -109,7 +112,8 @@ select:focus{
 }
 
 button{
-  transition:0.3s;
+
+  transition: all 0.3s ease;
 }
 
 button:hover{
@@ -130,4 +134,43 @@ button:hover{
   color:#64748b;
 
   font-size:14px;
+}
+
+/* =========================
+   WhatsApp Floating Button
+========================= */
+
+.whatsapp-float {
+
+  position: fixed;
+
+  width: 60px;
+  height: 60px;
+
+  bottom: 25px;
+  right: 25px;
+
+  z-index: 1000;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+
+  width: 60px;
+  height: 60px;
 }
