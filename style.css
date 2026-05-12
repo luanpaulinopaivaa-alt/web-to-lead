@@ -9,12 +9,6 @@ body{
 
   min-height:100vh;
 
-  display:flex;
-
-  justify-content:center;
-
-  align-items:center;
-
   padding:40px 20px;
 
   background:linear-gradient(135deg,#f4f4f4,#ececec);
@@ -29,6 +23,8 @@ body{
   justify-content:center;
 
   align-items:center;
+
+  min-height:80vh;
 }
 
 .card{
@@ -311,4 +307,142 @@ h2{
 
   width:55px;
   height:55px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer{
+
+  width:100%;
+
+  background:#f4f4f4;
+
+  padding:40px 30px 20px;
+
+  margin-top:60px;
+
+  border-top:1px solid #ddd;
+}
+
+.footer-top{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  flex-wrap:wrap;
+
+  gap:30px;
+
+  margin-bottom:25px;
+}
+
+.footer-logo h2{
+
+  color:#b0005a;
+
+  font-size:36px;
+
+  margin-bottom:10px;
+}
+
+.footer-logo span{
+
+  color:#5b5b5b;
+
+  font-size:14px;
+}
+
+.footer-contact p{
+
+  color:#5b5b5b;
+
+  margin-bottom:8px;
+
+  font-size:15px;
+}
+
+.footer-social{
+
+  display:flex;
+
+  gap:15px;
+}
+
+.footer-social img{
+
+  width:45px;
+
+  transition:all 0.3s ease;
+}
+
+.footer-social img:hover{
+
+  transform:scale(1.1);
+}
+
+.footer-bottom{
+
+  border-top:1px solid #ddd;
+
+  padding-top:20px;
+
+  text-align:center;
+}
+
+.footer-bottom p{
+
+  color:#777;
+
+  margin-bottom:8px;
+
+  font-size:14px;
+}
+
+/* =========================
+   Responsividade
+========================= */
+
+@media(max-width:768px){
+
+  .card,
+  .form-container{
+
+    width:100%;
+
+    padding:30px 20px;
+  }
+
+  .footer-top{
+
+    flex-direction:column;
+
+    text-align:center;
+  }
+
+  .footer-social{
+
+    justify-content:center;
+  }
+
+  .footer-logo h2{
+
+    font-size:28px;
+  }
+
+  .back-button{
+
+    position:relative;
+
+    top:0;
+    left:0;
+
+    display:inline-block;
+
+    margin-bottom:20px;
+  }
 }
